@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Automated XSS Scanner & Analyzer - GUI Version (Optimized)
+CROSSX - GUI Version (Optimized)
 Enhanced with better multithreading for scanning 10+ URLs simultaneously
 """
 
@@ -26,7 +26,7 @@ MAX_WORKERS = 10  # Maximum concurrent scans
 class XSSScannerGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Automated XSS Scanner & Analyzer")
+        self.root.title("CROSSX")
         self.root.geometry("900x700")
         self.root.resizable(True, True)
         
@@ -42,7 +42,7 @@ class XSSScannerGUI:
         self.scan_folder = None  # Will store the scan results folder path
         
         self.setup_ui()
-        self.apply_light_theme()
+        self.apply_dark_theme()
     
     def setup_ui(self):
         # Top bar with dark mode toggle
@@ -63,7 +63,7 @@ class XSSScannerGUI:
         
         title_label = ttk.Label(
             title_frame, 
-            text="🔍 Automated XSS Scanner & Analyzer",
+            text="🔍 CROSSX",
             font=("Arial", 16, "bold")
         )
         title_label.pack()
@@ -734,7 +734,7 @@ class XSSScannerGUI:
         if self.dark_mode:
             self.apply_dark_theme()
         else:
-            self.apply_light_theme()
+            self.apply_dark_theme()
     
     def apply_dark_theme(self):
         # Cyberpunk/Hacker dark theme colors
@@ -764,7 +764,7 @@ class XSSScannerGUI:
                        background=frame_bg,
                        foreground="#00ff41",
                        bordercolor="#00ff41",
-                       focuscolor="#ff00ff")
+                       focuscolor="#ff0000")
         
         style.map("TButton",
                  background=[("active", "#2a2f4a"), ("pressed", "#1a1f3a")],
@@ -777,7 +777,7 @@ class XSSScannerGUI:
                        bordercolor="#00ff41")
         
         style.configure("Horizontal.TProgressbar",
-                       background="#ff00ff",
+                       background="#ff0000",
                        troughcolor=frame_bg,
                        bordercolor="#00ff41",
                        lightcolor="#FF0000",
@@ -785,9 +785,9 @@ class XSSScannerGUI:
         
         # Update specific widgets with crazy colors
         self.file_label.config(background=bg_dark, foreground="#00ff41")
-        self.url_count_label.config(background=bg_dark, foreground="#ff00ff")
+        self.url_count_label.config(background=bg_dark, foreground="#ff0000")
         self.status_label.config(background=bg_dark, foreground="#00d4ff")
-        self.workers_label.config(background=bg_dark, foreground="#ff00ff")
+        self.workers_label.config(background=bg_dark, foreground="#ff0000")
         self.progress_label.config(background=bg_dark, foreground="#00ff41")
         self.results_label.config(background=bg_dark, foreground="#00d4ff")
         
@@ -796,7 +796,7 @@ class XSSScannerGUI:
             bg="#0d1117",
             fg="#00ff41",
             insertbackground="#00ff41",
-            selectbackground="#ff00ff",
+            selectbackground="#ff0000",
             selectforeground="#0d1117"
         )
         
@@ -805,7 +805,7 @@ class XSSScannerGUI:
         self.log_text.tag_config("error", foreground="#ff0055")    # Red
         self.log_text.tag_config("warning", foreground="#ffaa00")  # Orange
         self.log_text.tag_config("info", foreground="#00d4ff")     # Cyan
-        self.log_text.tag_config("special", foreground="#ff00ff")  # Magenta
+        self.log_text.tag_config("special", foreground="#ff0000")  # Magenta
     
     def apply_light_theme(self):
         bg_color = "#f0f0f0"
