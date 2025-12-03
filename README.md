@@ -1,6 +1,6 @@
 # crossX
 
-![crossX GUI](assets/screenshot.svg)
+![crossX GUI](assets/crossx.png)
 
 crossX is a small GUI/CLI helper for scanning multiple domains at once for XSS-related vectors. The repository contains a Scrapy-based spider and helper scripts to run quick checks against a set of targets.
 
