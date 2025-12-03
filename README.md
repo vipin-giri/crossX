@@ -1,11 +1,14 @@
 # crossX
 
+![crossX GUI](assets/screenshot.svg)
+
 crossX is a small GUI/CLI helper for scanning multiple domains at once for XSS-related vectors. The repository contains a Scrapy-based spider and helper scripts to run quick checks against a set of targets.
 
 Features
 - Scan multiple domains/URLs concurrently
 - Scrapy-based spider located in `xsscrapy/` with `xss_spider.py`
 - Small helpers and sample test pages in `tests/`
+
 
 Quickstart
 1. Create a Python virtual environment and install dependencies:
