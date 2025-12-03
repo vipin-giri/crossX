@@ -1,0 +1,33 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and result outputs
+result/
+results/
+*.result
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Misc
+.DS_Store
+.env
+.pytest_cache/
+
+# NOTE: user requested ignoring __init__.py — include below but be cautious.
+__init__.py
