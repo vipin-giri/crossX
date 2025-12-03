@@ -105,6 +105,16 @@ sudo pip install --upgrade scrapy
 
 It's called XSScrapy, so why SQL injection detection too? There is overlap between dangerous XSS chars and dangerous SQL injection characters, namely single and double quotes. Detecting SQL injection errors in a response is also simple and non-CPU-intensive. So although 99% of this script is strongly geared toward high and accurate detection of XSS, adding simple SQL injection detection through error message discovery is a simple and effective addition. This script will not test for blind SQL injection. Error messages it looks for come straight from w3af's sqli audit plugin.
 
+
+```bash
+python3 crossx.py
+# or
+python crossx.py
+```
+
+The GUI will allow you to supply multiple targets and will invoke the underlying `xsscrapy` logic (or the Scrapy spider) for each domain. If you'd like, I can add a short example target list and a small wrapper script that runs `xsscrapy.py` for each domain in a file.
+
+
 License
 -------
 Copyright (c) 2014, Dan McInerney All rights reserved.
@@ -119,11 +129,3 @@ Redistribution and use in source and binary forms, with or without modification,
 Multiple-domain GUI usage
 -------------------------
 This repository provides a simple GUI helper (and a CLI entry) for scanning multiple domains at once. To run the common Python entry script, from the project root run:
-
-```bash
-python3 crossx.py
-# or
-python crossx.py
-```
-
-The GUI will allow you to supply multiple targets and will invoke the underlying `xsscrapy` logic (or the Scrapy spider) for each domain. If you'd like, I can add a short example target list and a small wrapper script that runs `xsscrapy.py` for each domain in a file.
