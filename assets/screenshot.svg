@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="240" fill="#0f172a" rx="8"/>
+  <rect x="18" y="18" width="764" height="204" fill="url(#g)" rx="6" opacity="0.12"/>
+  <g transform="translate(32,32)" fill="#e6eef8" font-family="Inter, Arial, sans-serif">
+    <text x="0" y="28" font-size="20" font-weight="700">crossX — Multiple-domain scanner (GUI)</text>
+    <rect x="0" y="44" width="736" height="8" rx="4" fill="#e6eef8" opacity="0.08"/>
+    <text x="0" y="98" font-size="14" opacity="0.95">Targets:</text>
+    <rect x="78" y="82" width="520" height="28" rx="4" fill="#081028" stroke="#255bff" stroke-opacity="0.12"/>
+    <text x="86" y="100" font-size="12" opacity="0.6">example.com, testsite.local, demo.org</text>
+    <rect x="610" y="82" width="106" height="28" rx="4" fill="#10b981" opacity="0.14"/>
+    <text x="634" y="100" font-size="12" opacity="0.95">Start</text>
+    <text x="0" y="148" font-size="12" opacity="0.85">Status: 3 running • 5 queued • 0 errors</text>
+    <rect x="0" y="160" width="736" height="56" rx="6" fill="#081028" opacity="0.06"/>
+    <text x="8" y="178" font-size="12" opacity="0.65">Recent output: Found potential XSS on /search?q=&lt;script&gt;alert(1)&lt;/script&gt;</text>
+  </g>
+</svg>
