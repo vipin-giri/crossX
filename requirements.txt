@@ -1,0 +1,12 @@
+scrapy
+git+https://github.com/jaybaird/python-bloomfilter.git#egg=pybloom
+requests
+beautifulsoup4
+twisted
+w3lib
+lxml
+six
+cssselect
+pyopenssl
+cryptography
+queuelib
