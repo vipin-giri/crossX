@@ -13,8 +13,18 @@ Features
 Quickstart
 1. Create a Python virtual environment and install dependencies:
 
+##Linux
+
 ```bash
-git clone https://github.com/vipin-giri/crossX.git
+git clone https://github.com/vipin-giri/crossX.git  && cd crossX
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+## Win
+
+```bash
+git clone https://github.com/vipin-giri/crossX.git  && cd crossX
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
